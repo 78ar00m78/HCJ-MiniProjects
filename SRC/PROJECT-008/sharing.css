@@ -1,0 +1,70 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    color: #000;
+    font-family: "Roboto Flex";
+    font-weight: 400;
+    user-select: none;
+    width: 100vw;
+    height: 100vh;
+    font-size: 28px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7fff00;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+}
+.wrapper > div {
+    position: absolute;
+}
+.wrapper .layer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7fff00;
+    font-family: "Dancing Script", cursive;
+    transition-property: transform;
+    font-size: 36px;
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    transition-duration: 500ms;
+}
+.wrapper .logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+}
+.wrapper .logo img {
+    transition-property: transform;
+    transition-duration: 500ms;
+    transform: scale(0);
+    width: 30px;
+    height: 30px;
+}
+.wrapper:hover .layer {
+    transition-property: transform;
+    transition-duration: 500ms;
+    transform: translateX(300px);
+}
+.wrapper:hover .logo img {
+    transition-property: transform;
+    transition-duration: 500ms;
+    transform: scale(1) rotate(1080deg);
+} /*# sourceMappingURL=sharing.css.map */

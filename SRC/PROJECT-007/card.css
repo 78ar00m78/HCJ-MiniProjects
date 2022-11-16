@@ -1,0 +1,87 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    color: #000;
+    font-family: "Roboto Flex";
+    font-weight: 400;
+    user-select: none;
+    width: 100vw;
+    height: 100vh;
+    font-size: 28px;
+}
+.wrapper {
+    position: relative;
+    width: 500px;
+    height: 700px;
+    perspective: 2000px;
+}
+.wrapper > div {
+    backface-visibility: hidden;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 500ms;
+    width: 500px;
+    height: 700px;
+    border-radius: 30px;
+}
+.wrapper .image {
+    background-image: url("../../ASSETS/IMAGES/JPG/cr7.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.wrapper .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e0e0e0;
+    transform: rotateY(180deg);
+}
+.wrapper .info .face {
+    background-image: url("../../ASSETS/IMAGES/JPG/face.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+}
+.wrapper .info h4 {
+    font-size: 20px;
+}
+.wrapper .info .image-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin-top: 50px;
+}
+.wrapper .info .image-wrapper img {
+    transition-property: transform;
+    transform: scale(0);
+    width: 20px;
+    height: 20px;
+    transition-duration: 80ms;
+}
+.wrapper:hover .image {
+    transition-property: transform;
+    transform: rotateY(180deg);
+    transition-duration: 500ms;
+}
+.wrapper:hover .info {
+    transition-property: transform;
+    transform: rotateY(360deg);
+    transition-duration: 500ms;
+}
+.wrapper:hover .info img {
+    transition-property: transform;
+    transform: scale(1.5) rotate(1080deg);
+    transition-duration: 900ms;
+} /*# sourceMappingURL=card.css.map */

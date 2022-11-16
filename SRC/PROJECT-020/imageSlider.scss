@@ -1,0 +1,74 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+@import "../../ASSETS/SCSS/mixins.scss";
+
+* {
+    @include universalSelector;
+}
+
+body {
+    @include body(#e5e5e5);
+}
+
+.wrapper {
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    perspective: 1000px;
+
+    div {
+        position: absolute;
+        width: 1200px;
+        height: 700px;
+        border-radius: 15px;
+    }
+
+    .first {
+        background-image: url("../../ASSETS/IMAGES/JPG/1.jpg");
+        background-size: cover;
+        transform: translate3d(450px, 0, -450px) rotateY(-45deg);
+    }
+
+    .second {
+        background-image: url("../../ASSETS/IMAGES/JPG/2.jpg");
+        background-size: cover;
+        transform: translate3d(350px, 0, -450px) rotateY(-45deg);
+    }
+
+    .third {
+        background-image: url("../../ASSETS/IMAGES/JPG/3.jpg");
+        background-size: cover;
+        transform: translate3d(0, 0, 0) rotateY(0);
+        z-index: 1;
+    }
+
+    .fourth {
+        background-image: url("../../ASSETS/IMAGES/JPG/4.jpg");
+        background-size: cover;
+        transform: translate3d(-350px, 0, -450px) rotateY(45deg);
+        z-index: -1;
+    }
+
+    .fifth {
+        background-image: url("../../ASSETS/IMAGES/JPG/5.jpg");
+        background-size: cover;
+        transform: translate3d(-450px, 0, -450px) rotateY(45deg);
+        z-index: -2;
+    }
+}
+
+button {
+    background-color: rgba(128, 128, 128, 0.4);
+    position: absolute;
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    bottom: 2%;
+    border-bottom: 3px solid black;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    &:focus {
+        outline: none;
+    }
+}

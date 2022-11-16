@@ -1,0 +1,58 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+@import "../../ASSETS/SCSS/mixins.scss";
+
+* {
+    @include universalSelector;
+}
+
+body {
+    @include body(whitesmoke, black, 20px);
+}
+
+div {
+    @include flex;
+    background-color: royalblue;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    top: calc(50% - 35px);
+    left: calc(50% - 35px);
+
+    img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+div:has([src="../../ASSETS/IMAGES/PNG/share.png"]) {
+    z-index: 1;
+}
+
+div:has([src="../../ASSETS/IMAGES/PNG/multiply.png"]) {
+    z-index: 1;
+}
+
+div:has([src="../../ASSETS/IMAGES/SVG/discord.svg"]) {
+    img {
+        transform: rotate(45deg);
+    }
+}
+
+div:has([src="../../ASSETS/IMAGES/SVG/instagram.svg"]) {
+    img {
+        transform: rotate(45deg);
+    }
+}
+
+div:has([src="../../ASSETS/IMAGES/SVG/youtube.svg"]) {
+    img {
+        transform: rotate(-45deg);
+    }
+}
+
+div:has([src="../../ASSETS/IMAGES/SVG/reddit.svg"]) {
+    img {
+        transform: rotate(-45deg);
+    }
+}

@@ -1,0 +1,10 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+@import "../../ASSETS/SCSS/mixins.scss";
+
+* {
+    @include universalSelector;
+}
+
+body {
+    @include body(whitesmoke, black, 150px);
+}

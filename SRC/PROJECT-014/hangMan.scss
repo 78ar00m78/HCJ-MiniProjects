@@ -1,0 +1,67 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+@import "../../ASSETS/SCSS/mixins.scss";
+
+* {
+    @include universalSelector;
+}
+
+body {
+    @include body(rgba(68, 68, 68, 0.2), black, 22px);
+}
+
+.wrapper {
+    @include flex(space-evenly);
+    position: relative;
+    width: 1300px;
+    height: 800px;
+    border-radius: 30px;
+
+    .title {
+        position: absolute;
+        top: 0;
+        font-size: 50px;
+    }
+
+    .letter-wrapper {
+        @include flex {
+            flex-direction: column;
+        }
+
+        width: 600px;
+        height: 600px;
+
+        & > div {
+            @include flex(space-evenly, center);
+            width: 400px;
+            height: 80px;
+
+            & > button {
+                border: none;
+                width: 70px;
+                height: 70px;
+                font-size: 22px;
+                border-radius: 100px;
+            }
+        }
+    }
+
+    .hang-man-wrapper {
+        @include flex {
+            flex-direction: column;
+        }
+        width: 600px;
+        height: 600px;
+
+        .the-word {
+            margin-top: 75px;
+            margin-left: -50px;
+            font-size: 50px;
+        }
+    }
+
+    .result {
+        position: absolute;
+        bottom: 60px;
+        font-size: 50px;
+    }
+}

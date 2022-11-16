@@ -1,0 +1,102 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    color: #000;
+    font-family: "Roboto Flex";
+    font-weight: 400;
+    user-select: none;
+    width: 100vw;
+    height: 100vh;
+    font-size: 36px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f7ea5f;
+    background: linear-gradient(
+        90deg,
+        hsl(55deg, 90%, 67%) 0%,
+        hsl(173deg, 87%, 59%) 50%,
+        hsl(327deg, 89%, 71%) 100%
+    );
+    background: -moz-linear-gradient(
+        90deg,
+        hsl(55deg, 90%, 67%) 0%,
+        hsl(173deg, 87%, 59%) 50%,
+        hsl(327deg, 89%, 71%) 100%
+    );
+    background: -webkit-linear-gradient(
+        90deg,
+        hsl(55deg, 90%, 67%) 0%,
+        hsl(173deg, 87%, 59%) 50%,
+        hsl(327deg, 89%, 71%) 100%
+    );
+    font-family: "Cookie", cursive;
+    transition-property: width;
+    overflow: hidden;
+    transition-duration: 500ms;
+    width: 90px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.wrapper > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    transition-property: width;
+    transition-duration: 500ms;
+    width: 50px;
+    height: 60px;
+}
+.wrapper > div span {
+    transition-property: margin-left;
+    transition-duration: 350ms;
+    margin-left: -135px;
+}
+.wrapper > div img {
+    width: 35px;
+    height: 35px;
+    margin: 0 7.5px 0 7.5px;
+}
+.wrapper > div:not(:last-child) {
+    margin-bottom: 20px;
+}
+.wrapper:hover {
+    transition-property: width;
+    transition-duration: 500ms;
+    width: 340px;
+}
+.wrapper:hover div {
+    transition-property: width, background-color;
+    transition-duration: 500ms;
+    width: 300px;
+}
+.wrapper:hover div {
+    width: 300px;
+}
+.wrapper:hover div span {
+    transition-property: margin-left;
+    transition-duration: 500ms;
+    margin-left: 20px;
+}
+.wrapper:hover div img {
+    transition-property: margin-right;
+    transition-duration: 500ms;
+    margin-right: 20px;
+}
+.wrapper:hover div:hover {
+    transition-property: background-color;
+    transition-duration: 500ms;
+    background-color: rgba(255, 255, 255, 0.7);
+} /*# sourceMappingURL=sideBar.css.map */

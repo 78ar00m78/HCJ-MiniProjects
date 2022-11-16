@@ -1,0 +1,74 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+@import "../../ASSETS/SCSS/mixins.scss";
+
+* {
+    @include universalSelector;
+}
+
+body {
+    @include body(unset, black, 22px) {
+        background-image: hsla(211, 66%, 87%, 1);
+
+        background-image: linear-gradient(
+            90deg,
+            hsla(211, 66%, 87%, 1) 0%,
+            hsla(348, 67%, 88%, 1) 50%,
+            hsla(272, 26%, 72%, 1) 100%
+        );
+
+        background-image: -webkit-linear-gradient(
+            90deg,
+            hsla(211, 66%, 87%, 1) 0%,
+            hsla(348, 67%, 88%, 1) 50%,
+            hsla(272, 26%, 72%, 1) 100%
+        );
+    }
+}
+
+.wrapper {
+    @include flex(space-between);
+    background-color: white;
+    width: 800px;
+    height: 70px;
+    border-radius: 15px;
+
+    & > div {
+        @include flex;
+        position: relative;
+        overflow: hidden;
+        width: 120px;
+        height: 70px;
+
+        &:first-child {
+            margin-left: 30px;
+        }
+
+        &:last-child {
+            margin-right: 30px;
+        }
+
+        span {
+            background-color: black;
+            transition-property: transform;
+            position: absolute;
+            display: inline-block;
+            transform: translateY(5px);
+            width: 120px;
+            height: 5px;
+            bottom: 0;
+            right: 0;
+            transition-duration: 300ms;
+        }
+
+        &:hover span {
+            transition-property: transform;
+            transition-duration: 300ms;
+            transform: translateY(0px);
+        }
+    }
+
+    .home {
+        border-bottom: 5px solid crimson;
+        color: crimson;
+    }
+}

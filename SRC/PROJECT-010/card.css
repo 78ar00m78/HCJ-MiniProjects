@@ -1,0 +1,108 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    color: #000;
+    font-family: "Roboto Flex";
+    font-weight: 400;
+    user-select: none;
+    width: 100vw;
+    height: 100vh;
+    font-size: 20px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(102, 51, 153, 0.2);
+    width: 700px;
+    height: 700px;
+    border-radius: 30px;
+}
+.wrapper .detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+}
+.wrapper .detail .right-side {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 370px;
+    height: 600px;
+    background-color: #fff;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.wrapper .detail .right-side .img {
+    width: 200px;
+    height: 200px;
+    background-image: url("../../ASSETS/IMAGES/JPG/cr7-.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 300px;
+    margin-top: 100px;
+}
+.wrapper .detail .right-side h1 {
+    margin-top: 10px;
+}
+.wrapper .detail .right-side h4 {
+    font-size: 12px;
+}
+.wrapper .detail .right-side .follow {
+    margin-top: 30px;
+}
+.wrapper .detail .right-side .message {
+    margin-top: 15px;
+}
+.wrapper .detail .right-side .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    border: 3px solid #639;
+}
+.wrapper .detail .right-side .btn:hover {
+    background-color: #639;
+    color: #fff;
+}
+.wrapper .detail .left-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: #fff;
+    width: 230px;
+    height: 600px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.wrapper .detail .left-side .posts,
+.wrapper .detail .left-side .followers,
+.wrapper .detail .left-side .following {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 190px;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+.wrapper .detail .left-side .posts {
+    border-top-right-radius: 30px;
+}
+.wrapper .detail .left-side .following {
+    border-bottom-right-radius: 30px;
+} /*# sourceMappingURL=card.css.map */

@@ -1,0 +1,105 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+@import "../../ASSETS/SCSS/mixins.scss";
+
+* {
+    @include universalSelector;
+}
+
+body {
+    @include body(#e5e5e5, black, 20px);
+}
+
+.wrapper {
+    @include flex;
+    background-color: rgba(102, 51, 153, 0.2);
+    width: 700px;
+    height: 700px;
+    border-radius: 30px;
+
+    .detail {
+        @include flex;
+        width: 600px;
+        height: 600px;
+        border-radius: 30px;
+
+        .right-side {
+            @include flex(flex-start) {
+                flex-direction: column;
+            }
+
+            width: 370px;
+            height: 600px;
+            background-color: white;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+
+            .img {
+                width: 200px;
+                height: 200px;
+                background-image: url("../../ASSETS/IMAGES/JPG/cr7-.jpg");
+                background-size: cover;
+                background-position: center;
+                border-radius: 300px;
+                margin-top: 100px;
+            }
+
+            h1 {
+                margin-top: 10px;
+            }
+
+            h4 {
+                font-size: 12px;
+            }
+
+            .follow {
+                margin-top: 30px;
+            }
+
+            .message {
+                margin-top: 15px;
+            }
+
+            .btn {
+                @include flex;
+                width: 250px;
+                height: 50px;
+                border-radius: 30px;
+                border: 3px solid rebeccapurple;
+
+                &:hover {
+                    background-color: rebeccapurple;
+                    color: white;
+                }
+            }
+        }
+
+        .left-side {
+            @include flex(space-between, flex-end) {
+                flex-direction: column;
+            }
+
+            background-color: white;
+            width: 230px;
+            height: 600px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+
+            .posts,
+            .followers,
+            .following {
+                @include flex;
+                width: 230px;
+                height: 190px;
+                background-color: rgba(128, 128, 128, 0.2);
+            }
+
+            .posts {
+                border-top-right-radius: 30px;
+            }
+
+            .following {
+                border-bottom-right-radius: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4169e1;
+    color: #fff;
+    font-family: "Roboto Flex";
+    font-weight: 400;
+    user-select: none;
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;
+}
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 600px;
+    height: 90px;
+    padding: 20px;
+}
+.slider > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4169e1;
+    width: 50px;
+    height: 50px;
+}
+.slider .middle {
+    position: relative;
+    width: 460px;
+}
+.slider .middle > * {
+    position: absolute;
+}
+.slider .middle .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4169e1;
+    color: #fff;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    transform: rotate(45deg) scale(0);
+    border: 5px solid #fff;
+    width: 50px;
+    height: 50px;
+    top: -50px;
+    transition-duration: 300ms;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    left: 113.0606060606px;
+}
+.slider .middle .number span {
+    transform: rotate(-45deg);
+}
+.slider .middle .show {
+    transition-timing-function: ease-in-out;
+    transform: rotate(45deg) scale(1);
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+.slider .middle input {
+    background-color: rgba(128, 128, 128, 0.5);
+    appearance: none;
+    width: 460px;
+    border-radius: 5px;
+    height: 5px;
+}
+.slider .middle input::-webkit-slider-thumb {
+    appearance: none;
+    background-color: #4169e1;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+}
+.slider .middle .tracker {
+    background-color: #4169e1;
+    width: 138px;
+    height: 5px;
+    border-radius: 5px;
+    left: 0;
+} /*# sourceMappingURL=slider.css.map */

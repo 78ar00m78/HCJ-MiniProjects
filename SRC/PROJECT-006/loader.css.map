@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "sourceRoot": "",
+    "sources": [
+        "loader.scss",
+        "../../ASSETS/SCSS/mixins.scss"
+    ],
+    "names": [],
+    "mappings": "AAAQ,2CAGR,ECFI,sBACA,UACA,SDIJ,KCCI,aACA,gBAF0B,OAG1B,YAHgD,OAShD,iBAF2B,QAG3B,MAH+C,KAI/C,0BACA,gBACA,iBACA,YACA,aACA,UATkE,KDHtE,OCHI,aACA,gBAF0B,OAG1B,YAHgD,ODMhD,sCACA,YACA,aACA,qBACA,kBACA,+DAEA,sBACA,mCACA,iCACA,sBAEA,cACI,sBACA,YACA,aACA,qBAIR,kBACI,GACI,uBAEJ,IACI,yBAEJ,KACI",
+    "file": "loader.css"
+}

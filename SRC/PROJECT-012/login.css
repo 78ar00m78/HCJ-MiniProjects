@@ -1,0 +1,102 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    color: #fff;
+    font-family: "Roboto Flex";
+    font-weight: 400;
+    user-select: none;
+    width: 100vw;
+    height: 100vh;
+    font-size: 22px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-top: 5px solid #eb3d3d;
+    background-color: #242834;
+    width: 500px;
+    height: 700px;
+}
+.wrapper h3 {
+    margin-left: 70px;
+    margin-bottom: 50px;
+}
+.wrapper .input-1,
+.wrapper .input-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #33354a;
+    width: 500px;
+    height: 45px;
+}
+.wrapper .input-1 img,
+.wrapper .input-2 img {
+    width: 30px;
+    height: 30px;
+    margin-left: 70px;
+}
+.wrapper .input-1 input[type="text"],
+.wrapper .input-2 input[type="text"] {
+    border: none;
+    background-color: #33354a;
+    color: #fff;
+    padding: 0 20px 0 20px;
+    width: 300px;
+    height: 43px;
+    font-size: 18px;
+}
+.wrapper .input-1 input[type="text"]:focus,
+.wrapper .input-2 input[type="text"]:focus {
+    outline: none;
+}
+.wrapper .input-1 input[type="text"]::placeholder,
+.wrapper .input-2 input[type="text"]::placeholder {
+    font-size: 18px;
+}
+.wrapper .input-1 input[type="text"]::selection,
+.wrapper .input-2 input[type="text"]::selection {
+    background-color: #7f8291;
+    color: #242834;
+}
+.wrapper .input-1 {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.wrapper .input-2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 50px;
+}
+.wrapper .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+}
+.wrapper .container button {
+    border: 3px solid #cd5f7e;
+    background-color: #242834;
+    color: #cd5f7e;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+}
+.wrapper .container button:hover {
+    background-color: #cd5f7e;
+    color: #242834;
+}
+.wrapper .container a {
+    text-decoration: none;
+    color: #7f8291;
+} /*# sourceMappingURL=login.css.map */

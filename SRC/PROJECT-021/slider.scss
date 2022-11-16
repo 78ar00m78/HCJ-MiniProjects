@@ -1,0 +1,88 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+@import "../../ASSETS/SCSS/mixins.scss";
+
+* {
+    @include universalSelector;
+}
+
+body {
+    @include body(royalblue, white, 18px);
+}
+
+.slider {
+    @include flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 600px;
+    height: 90px;
+    padding: 20px;
+
+    & > div {
+        @include flex;
+        color: royalblue;
+        width: 50px;
+        height: 50px;
+    }
+
+    .middle {
+        position: relative;
+        width: 460px;
+
+        & > * {
+            position: absolute;
+        }
+
+        .number {
+            @include flex;
+            background-color: royalblue;
+            color: white;
+            transition-property: transform;
+            transition-timing-function: ease-in-out;
+            transform: rotate(45deg) scale(0);
+            border: 5px solid white;
+            width: 50px;
+            height: 50px;
+            top: -50px;
+            transition-duration: 300ms;
+            border-top-left-radius: 100%;
+            border-top-right-radius: 100%;
+            border-bottom-left-radius: 100%;
+            left: calc((444 / 99)) * (29) - 17px;
+
+            span {
+                transform: rotate(-45deg);
+            }
+        }
+
+        .show {
+            transition-timing-function: ease-in-out;
+            transform: rotate(45deg) scale(1);
+            transition-property: transform;
+            transition-duration: 300ms;
+        }
+
+        input {
+            background-color: rgba(128, 128, 128, 0.5);
+            appearance: none;
+            width: 460px;
+            border-radius: 5px;
+            height: 5px;
+
+            &::-webkit-slider-thumb {
+                appearance: none;
+                background-color: royalblue;
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+            }
+        }
+
+        .tracker {
+            background-color: royalblue;
+            width: 138px;
+            height: 5px;
+            border-radius: 5px;
+            left: 0;
+        }
+    }
+}

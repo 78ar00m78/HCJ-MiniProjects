@@ -1,0 +1,88 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+@import "../../ASSETS/SCSS/mixins.scss";
+
+* {
+    @include universalSelector;
+}
+
+body {
+    @include body;
+}
+
+.calculator {
+    background-color: white;
+    width: 400px;
+
+    .header {
+        @include flex(space-between);
+        background-color: white;
+        width: 400px;
+        height: 60px;
+        padding: 0 20px 0 20px;
+
+        &::before {
+            content: "Calculator";
+            background-color: royalblue;
+            display: block;
+            text-align: center;
+            border-radius: 100px;
+            width: 140px;
+            font-size: 24px;
+        }
+
+        i {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .display-part {
+        @include flex(flex-end, flex-end);
+        background-color: rgba(128, 128, 128, 0.3);
+        width: 400px;
+        height: 200px;
+
+        span {
+            font-size: 90px;
+            padding: 0 20px 20px 0;
+        }
+    }
+
+    .operation-part {
+        @include flex(space-between) {
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+
+        background-color: white;
+        width: 400px;
+        height: 500px;
+        padding: 20px;
+
+        .equal,
+        .same-color-1,
+        .same-color-2 {
+            color: white;
+        }
+
+        .same-color-1 {
+            background-color: rgba(128, 128, 128, 0.3);
+        }
+
+        .same-color-2 {
+            background-color: rgba(95, 158, 160, 0.5);
+        }
+
+        .equal {
+            background-color: royalblue;
+        }
+
+        div {
+            @include flex;
+            color: black;
+            border-radius: 100px;
+            width: 73px;
+            height: 73px;
+        }
+    }
+}

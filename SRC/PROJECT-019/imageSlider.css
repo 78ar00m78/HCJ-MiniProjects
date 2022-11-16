@@ -1,0 +1,77 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    color: #fff;
+    font-family: "Roboto Flex";
+    font-weight: 400;
+    user-select: none;
+    width: 100vw;
+    height: 100vh;
+    font-size: 28px;
+}
+.wrapper {
+    background-image: url("../../ASSETS/IMAGES/PNG/1.png");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+    width: 1000px;
+    height: 600px;
+}
+.wrapper .forward {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: calc(50% - 15px);
+    background-image: url("../../ASSETS/IMAGES/PNG/forward-copy.png");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    border-radius: 100px;
+}
+.wrapper .backward {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    background-image: url("../../ASSETS/IMAGES/PNG/forward-copy.png");
+    background-size: cover;
+    transform: rotate(180deg);
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: calc(50% - 15px);
+    border-radius: 100px;
+}
+.wrapper .div-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 80px;
+    bottom: 20px;
+    left: calc(50% - 40px);
+}
+.wrapper .div-wrapper div {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+}
+.wrapper .div-wrapper div:first-child {
+    background-color: #fff;
+}
+button {
+    border: none;
+    width: 200px;
+    height: 35px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 20px;
+} /*# sourceMappingURL=imageSlider.css.map */

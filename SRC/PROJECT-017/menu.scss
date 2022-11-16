@@ -1,0 +1,118 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+@import "../../ASSETS/SCSS/mixins.scss";
+
+* {
+    @include universalSelector;
+}
+
+body {
+    @include body(whitesmoke, black);
+}
+
+.wrapper {
+    @include flex(space-between, flex-start) {
+        flex-direction: column;
+    }
+
+    background-color: white;
+    position: relative;
+    width: 120px;
+    height: 700px;
+    border-radius: 10px;
+
+    .top-wrapper {
+        @include flex(space-around) {
+            flex-direction: column;
+        }
+
+        width: 120px;
+        height: 300px;
+
+        .social-media {
+            @include flex(space-between);
+            transition-property: background-color;
+            overflow: hidden;
+            width: 90px;
+            height: 60px;
+            border-radius: 10px;
+            transition-duration: 500ms;
+
+            &:hover {
+                transition-property: background-color;
+                transition-duration: 500ms;
+                background-color: #e5e5e5;
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+                margin-right: 30px;
+            }
+
+            span {
+                font-size: 28px;
+                margin-left: -120px;
+            }
+        }
+    }
+
+    .bottom-wrapper {
+        @include flex(space-around) {
+            flex-direction: column;
+        }
+
+        width: 120px;
+        height: 300px;
+
+        .social-media {
+            @include flex(space-between);
+            transition-property: background-color;
+            overflow: hidden;
+            width: 90px;
+            height: 60px;
+            border-radius: 10px;
+            transition-duration: 500ms;
+
+            &:hover {
+                transition-property: background-color;
+                transition-duration: 500ms;
+                background-color: #e5e5e5;
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+                margin-right: 30px;
+            }
+
+            span {
+                font-size: 28px;
+                margin-left: -120px;
+            }
+        }
+    }
+
+    .circle-cut {
+        @include flex;
+        background-color: #e5e5e5;
+        position: absolute;
+        top: calc(50% - 50px);
+        width: 100px;
+        height: 100px;
+        right: -50px;
+        border-radius: 100px;
+
+        .inner-circle {
+            @include flex;
+            background-color: white;
+            width: 80px;
+            height: 80px;
+            border-radius: 100px;
+
+            img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+}

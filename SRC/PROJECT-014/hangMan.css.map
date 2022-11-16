@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "sourceRoot": "",
+    "sources": [
+        "hangMan.scss",
+        "../../ASSETS/SCSS/mixins.scss"
+    ],
+    "names": [],
+    "mappings": "AAAQ,2CAGR,ECFI,sBACA,UACA,SDIJ,KCCI,aACA,gBAF0B,OAG1B,YAHgD,OAShD,iBDRc,kBCSd,MDTqC,KCUrC,0BACA,gBACA,iBACA,YACA,aACA,UDf4C,KAGhD,SCHI,aACA,gBDGc,aCFd,YAHgD,ODMhD,kBACA,aACA,aACA,mBAEA,gBACI,kBACA,MACA,eAGJ,yBChBA,aACA,gBAF0B,OAG1B,YAHgD,ODmBxC,sBAGJ,YACA,aAEA,6BCxBJ,aACA,gBDwBsB,aCvBtB,YDuBoC,OAC5B,YACA,YAEA,oCACI,YACA,WACA,YACA,eACA,oBAKZ,2BCvCA,aACA,gBAF0B,OAG1B,YAHgD,OD0CxC,sBAEJ,YACA,aAEA,qCACI,gBACA,kBACA,eAIR,iBACI,kBACA,YACA",
+    "file": "hangMan.css"
+}

@@ -1,0 +1,44 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+@import "../../ASSETS/SCSS/mixins.scss";
+
+* {
+    @include universalSelector;
+}
+
+body {
+    @include body;
+}
+
+.outer {
+    @include flex;
+    background-color: rgba(128, 128, 128, 0.2);
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px;
+    border: 25px solid;
+    border-color: royalblue transparent transparent transparent;
+
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+
+    .inner {
+        background-color: white;
+        width: 150px;
+        height: 150px;
+        border-radius: 1000px;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

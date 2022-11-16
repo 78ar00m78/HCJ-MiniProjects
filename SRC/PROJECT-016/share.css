@@ -1,0 +1,53 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    color: #000;
+    font-family: "Roboto Flex";
+    font-weight: 400;
+    user-select: none;
+    width: 100vw;
+    height: 100vh;
+    font-size: 20px;
+}
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4169e1;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    top: calc(50% - 35px);
+    left: calc(50% - 35px);
+}
+div img {
+    width: 25px;
+    height: 25px;
+}
+div:has([src="../../ASSETS/IMAGES/PNG/share.png"]) {
+    z-index: 1;
+}
+div:has([src="../../ASSETS/IMAGES/PNG/multiply.png"]) {
+    z-index: 1;
+}
+div:has([src="../../ASSETS/IMAGES/SVG/discord.svg"]) img {
+    transform: rotate(45deg);
+}
+div:has([src="../../ASSETS/IMAGES/SVG/instagram.svg"]) img {
+    transform: rotate(45deg);
+}
+div:has([src="../../ASSETS/IMAGES/SVG/youtube.svg"]) img {
+    transform: rotate(-45deg);
+}
+div:has([src="../../ASSETS/IMAGES/SVG/reddit.svg"]) img {
+    transform: rotate(-45deg);
+} /*# sourceMappingURL=share.css.map */

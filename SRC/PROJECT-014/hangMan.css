@@ -1,0 +1,73 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(68, 68, 68, 0.2);
+    color: #000;
+    font-family: "Roboto Flex";
+    font-weight: 400;
+    user-select: none;
+    width: 100vw;
+    height: 100vh;
+    font-size: 22px;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    width: 1300px;
+    height: 800px;
+    border-radius: 30px;
+}
+.wrapper .title {
+    position: absolute;
+    top: 0;
+    font-size: 50px;
+}
+.wrapper .letter-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+}
+.wrapper .letter-wrapper > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 80px;
+}
+.wrapper .letter-wrapper > div > button {
+    border: none;
+    width: 70px;
+    height: 70px;
+    font-size: 22px;
+    border-radius: 100px;
+}
+.wrapper .hang-man-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+}
+.wrapper .hang-man-wrapper .the-word {
+    margin-top: 75px;
+    margin-left: -50px;
+    font-size: 50px;
+}
+.wrapper .result {
+    position: absolute;
+    bottom: 60px;
+    font-size: 50px;
+} /*# sourceMappingURL=hangMan.css.map */

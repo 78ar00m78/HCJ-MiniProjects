@@ -1,0 +1,69 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    color: #fff;
+    font-family: "Roboto Flex";
+    font-weight: 400;
+    user-select: none;
+    width: 100vw;
+    height: 100vh;
+    font-size: 28px;
+    background-image: url("../../ASSETS/IMAGES/JPG/dark.jpg");
+    background-size: cover;
+}
+.calculator {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(7px);
+    width: 400px;
+    border-radius: 15px;
+}
+.calculator .display-part {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 400px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.calculator .display-part span {
+    margin: 0 20px 10px 0;
+    font-size: 90px;
+}
+.calculator .operation-part {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.calculator .operation-part div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    width: 100px;
+    height: 100px;
+    transition-duration: 500ms;
+    border-radius: 15px;
+}
+.calculator .operation-part div:hover {
+    transition-property: background-color;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition-duration: 500ms;
+}
+.calculator .operation-part .zero {
+    border-bottom-left-radius: 15px;
+}
+.calculator .operation-part .plus {
+    border-bottom-right-radius: 15px;
+} /*# sourceMappingURL=calculator.css.map */

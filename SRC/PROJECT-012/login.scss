@@ -1,0 +1,99 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+@import "../../ASSETS/SCSS/mixins.scss";
+
+* {
+    @include universalSelector;
+}
+
+body {
+    @include body(#e5e5e5, white, 22px);
+}
+
+.wrapper {
+    @include flex(center, flex-start) {
+        flex-direction: column;
+    }
+
+    border-top: 5px solid #eb3d3d;
+    background-color: #242834;
+    width: 500px;
+    height: 700px;
+
+    h3 {
+        margin-left: 70px;
+        margin-bottom: 50px;
+    }
+
+    .input-1,
+    .input-2 {
+        @include flex(flex-start);
+
+        background-color: #33354a;
+        width: 500px;
+        height: 45px;
+
+        img {
+            width: 30px;
+            height: 30px;
+            margin-left: 70px;
+        }
+
+        input[type="text"] {
+            border: none;
+            background-color: #33354a;
+            color: white;
+            padding: 0 20px 0 20px;
+            width: 300px;
+            height: 43px;
+            font-size: 18px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                font-size: 18px;
+            }
+
+            &::selection {
+                background-color: #7f8291;
+                color: #242834;
+            }
+        }
+    }
+
+    .input-1 {
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .input-2 {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        margin-bottom: 50px;
+    }
+
+    .container {
+        @include flex(space-around);
+        width: 500px;
+
+        button {
+            border: 3px solid #cd5f7e;
+            background-color: #242834;
+            color: #cd5f7e;
+            font-size: 16px;
+            width: 200px;
+            height: 50px;
+            border-radius: 30px;
+
+            &:hover {
+                background-color: #cd5f7e;
+                color: #242834;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: #7f8291;
+        }
+    }
+}

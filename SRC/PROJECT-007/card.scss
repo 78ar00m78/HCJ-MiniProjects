@@ -1,0 +1,90 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+@import "../../ASSETS/SCSS/mixins.scss";
+
+* {
+    @include universalSelector;
+}
+
+body {
+    @include body(whitesmoke, black);
+}
+
+.wrapper {
+    position: relative;
+    width: 500px;
+    height: 700px;
+    perspective: 2000px;
+
+    & > div {
+        backface-visibility: hidden;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 500ms;
+        width: 500px;
+        height: 700px;
+        border-radius: 30px;
+    }
+
+    .image {
+        background-image: url("../../ASSETS/IMAGES/JPG/cr7.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .info {
+        @include flex {
+            flex-direction: column;
+        }
+
+        background-color: #e0e0e0;
+        transform: rotateY(180deg);
+
+        .face {
+            background-image: url("../../ASSETS/IMAGES/JPG/face.jpg");
+            background-size: cover;
+            background-position: center;
+            border-radius: 200px;
+            width: 200px;
+            height: 200px;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+
+        .image-wrapper {
+            @include flex(space-between);
+
+            width: 200px;
+            margin-top: 50px;
+
+            img {
+                transition-property: transform;
+                transform: scale(0);
+                width: 20px;
+                height: 20px;
+                transition-duration: 80ms;
+            }
+        }
+    }
+
+    &:hover {
+        .image {
+            transition-property: transform;
+            transform: rotateY(180deg);
+            transition-duration: 500ms;
+        }
+
+        .info {
+            transition-property: transform;
+            transform: rotateY(360deg);
+            transition-duration: 500ms;
+
+            img {
+                transition-property: transform;
+                transform: scale(1.5) rotate(1080deg);
+                transition-duration: 900ms;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "sourceRoot": "",
+    "sources": [
+        "imageSlider.scss",
+        "../../ASSETS/SCSS/mixins.scss"
+    ],
+    "names": [],
+    "mappings": "AAAQ,2CAGR,ECFI,sBACA,UACA,SDIJ,KCCI,aACA,gBAF0B,OAG1B,YAHgD,OAShD,iBDRc,QCSd,MAH+C,KAI/C,0BACA,gBACA,iBACA,YACA,aACA,UATkE,KDHtE,SACI,mDACA,kCACA,sBACA,kBACA,mBACA,aACA,aAEA,kBACI,sCACA,kBACA,qBACA,8DACA,sBACA,WACA,YACA,WACA,oBAGJ,mBACI,sCACA,kBACA,8DACA,sBACA,yBACA,WACA,YACA,UACA,qBACA,oBAGJ,sBCrCA,aACA,gBDqCkB,cCpClB,YAHgD,ODwC5C,kBACA,WACA,YACA,sBAEA,0BACI,sCACA,WACA,YACA,oBAEA,sCACI,sBAMhB,OACI,YACA,YACA,YACA,gBACA,eACA",
+    "file": "imageSlider.css"
+}

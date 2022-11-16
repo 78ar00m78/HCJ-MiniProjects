@@ -1,0 +1,66 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+@import "../../ASSETS/SCSS/mixins.scss";
+
+* {
+    @include universalSelector;
+}
+
+body {
+    @include body(#e5e5e5, black);
+}
+
+.wrapper {
+    @include flex;
+    background-color: chartreuse;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+
+    & > div {
+        position: absolute;
+    }
+
+    .layer {
+        @include flex;
+        background-color: chartreuse;
+        font-family: "Dancing Script", cursive;
+        transition-property: transform;
+        font-size: 36px;
+        width: 300px;
+        height: 60px;
+        border-radius: 30px;
+        transition-duration: 500ms;
+    }
+
+    .logo {
+        @include flex(space-around);
+        width: 300px;
+        height: 60px;
+
+        img {
+            transition-property: transform;
+            transition-duration: 500ms;
+            transform: scale(0);
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &:hover {
+        .layer {
+            transition-property: transform;
+            transition-duration: 500ms;
+            transform: translateX(300px);
+        }
+
+        .logo {
+            img {
+                transition-property: transform;
+                transition-duration: 500ms;
+                transform: scale(1) rotate(1080deg);
+            }
+        }
+    }
+}

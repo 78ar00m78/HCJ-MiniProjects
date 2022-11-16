@@ -1,0 +1,73 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+@import "../../ASSETS/SCSS/mixins.scss";
+
+* {
+    @include universalSelector;
+}
+
+body {
+    @include body(#e5e5e5);
+}
+
+.wrapper {
+    background-image: url("../../ASSETS/IMAGES/PNG/1.png");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+    width: 1000px;
+    height: 600px;
+
+    .forward {
+        background-color: rgba(255, 255, 255, 0.7);
+        position: absolute;
+        top: calc(50% - 15px);
+        background-image: url("../../ASSETS/IMAGES/PNG/forward-copy.png");
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        right: 15px;
+        border-radius: 100px;
+    }
+
+    .backward {
+        background-color: rgba(255, 255, 255, 0.7);
+        position: absolute;
+        background-image: url("../../ASSETS/IMAGES/PNG/forward-copy.png");
+        background-size: cover;
+        transform: rotate(180deg);
+        width: 30px;
+        height: 30px;
+        left: 15px;
+        top: calc(50% - 15px);
+        border-radius: 100px;
+    }
+
+    .div-wrapper {
+        @include flex(space-between);
+        position: absolute;
+        width: 80px;
+        bottom: 20px;
+        left: calc(50% - 40px);
+
+        div {
+            background-color: rgba(255, 255, 255, 0.7);
+            width: 10px;
+            height: 10px;
+            border-radius: 100px;
+
+            &:first-child {
+                background-color: white;
+            }
+        }
+    }
+}
+
+button {
+    border: none;
+    width: 200px;
+    height: 35px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 20px;
+}

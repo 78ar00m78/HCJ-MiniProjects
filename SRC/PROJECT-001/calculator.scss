@@ -1,0 +1,51 @@
+@import "../../ASSETS/FONTFACES/fontFaces.css";
+@import "../../ASSETS/SCSS/mixins.scss";
+
+* {
+    @include universalSelector;
+}
+
+body {
+    @include body;
+}
+
+.calculator {
+    background-color: white;
+    width: 450px;
+    height: 700px;
+    padding: 20px;
+    border-radius: 20px;
+
+    .display-part {
+        @include flex(flex-end, flex-end);
+        background-color: cadetblue;
+        width: 410px;
+        height: 200px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+
+        span {
+            font-size: 100px;
+            margin-right: 20px;
+        }
+    }
+
+    .operation-part {
+        @include flex(space-between) {
+            align-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        width: 410px;
+        height: 440px;
+        border-radius: 20px;
+
+        div {
+            @include flex;
+            background-color: cadetblue;
+            width: 90px;
+            height: 90px;
+            border-radius: 100px;
+        }
+    }
+}
